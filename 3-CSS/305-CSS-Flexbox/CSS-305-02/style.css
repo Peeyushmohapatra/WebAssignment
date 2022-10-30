@@ -1,1 +1,112 @@
 /* start your styling here  */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-weight:500;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(38,84,123);
+}
+
+.main-container {
+    height: 700px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    flex: 1;
+    border-radius: 15px;
+    background-color: rgb(38,84,123);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 20px;
+    box-shadow:  0 -7px 0 0  rgb(172, 17, 53);
+}
+
+.C-button {
+    height: 99%;
+    width: 20%;
+    background-color: rgb(255,209,102);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 8px rgb(184, 136, 23);
+}
+
+.Row-one {
+    display: flex;
+    height: 16%;
+    width: 100%;
+    gap: 20px;
+}
+
+.calc-body {
+    height: 550px;
+    width: 600px;
+    padding: 25px;
+    background-color: rgb(241,70,110);
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px rgb(219, 26, 71);
+    border-radius: 15px;
+}
+
+.blue-div {
+    height: 99%;
+    width: 20%;
+    background-color: rgb(38,84,123);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px rgb(19, 54, 85)
+}
+.yellow-div {
+    height: 99%;
+    width: 20%;
+    background-color: rgb(255,209,102);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 7px rgb(184, 136, 23);
+}
+
+.green-div {
+    height: 99%;
+    width: 20%;
+    background-color: rgb(6,214,160);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px rgb(5, 162, 120);
+}
+
+.grey {
+    color: rgb(125,125,125)
+}
+
+.button-container {
+    display: flex;
+    height: 16%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.white {
+    color:white;
+}

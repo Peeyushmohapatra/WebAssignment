@@ -1,1 +1,104 @@
 /* start your css here */
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .main-container {
+    height: 567px;
+    width: 587px;
+    padding: 10px;
+    gap: 23px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+  }
+
+  .heading {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    height: 28px;
+    width: 509px;
+    align-items: center;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .input {
+   border: none;
+   color: gray;
+  }
+  .h3 {
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+  }
+
+  .input-div {
+    background-color: white;
+    border: 2px solid black;
+    width: 504px;padding: 20px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .input-div2 {
+    background-color: white;
+    border: 2px solid black;
+    width: 504px;
+    padding: 20px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .block-div {
+    display: flex;
+    gap:50px;
+    height: 50px;
+    width: 504px;
+    position: relative;
+  }
+
+  .checkbox {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .p1 {
+    
+    color: white;
+    font-style: italic;
+    font-size: x-small;
+    font-family:'Calibri';
+    font-weight: 300;
+  }
+
+  .button-div {
+    display: flex;
+    justify-content: center;
+    margin-left: 188px;
+    margin-right: 233px;
+  }
+  
+  .button {
+    width: 166px;
+    height: 46px;
+    border: 3px solid white;
+    background-color: black;
+  }

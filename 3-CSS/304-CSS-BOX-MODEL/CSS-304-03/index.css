@@ -1,1 +1,31 @@
 /* start your css here */
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 301px;
+    height: 430px;
+  }
+
+  .p1 {
+    margin-bottom: 0;
+    font-family: Calibri Light;
+    font-weight: bold;
+  }
+
+  .p2 {
+    margin-top: 0;
+    color: gray;
+    font-family: Microsoft Sans Serif;
+  }

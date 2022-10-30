@@ -1,1 +1,21 @@
-/* start your css here */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.main {
+    padding: 20px;
+}
+.heading {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.subheading{
+  margin-bottom: 20px;
+}
+.underline {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.aTag {
+  color: blue;
+}

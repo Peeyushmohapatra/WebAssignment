@@ -11,6 +11,19 @@ How to use this repository
 
 # Git
 
+<<<<<<< HEAD
+| S No. | Topic | Assignment                                                | Hosted Link |
+| ----- | ----- | --------------------------------------------------------- | ----------- |
+| 1     | GIT   | [COMMAND LINE](./0-Git/GIT-001-COMMANDLINE/ )            | NA          |
+| 2     | GIT   | [GIT-002-01](./0-Git/GIT-002-GIT-PRACTICE/)              |             |
+| 2     | GIT   | [GIT-002-02](./0-Git/GIT-002-GIT-PRACTICE/)              |  https://peeyushmohapatra.github.io/very-basic-resume/           |
+
+# JS Basics
+
+| S No. | Topic     | Assignment                                | FreeCodeCamp Id | Question Done Till Now |
+| ----- | --------- | ----------------------------------------- | --------------- | --------------- |
+| 1     | JS Basics | [JS BASIC Question List](./1-JS-BASICS/) |    [https://www.freecodecamp.org/peeyushmohapatra     ](https://www.freecodecamp.org/peeyushmohapatra)        |   115             |
+=======
 | S No. | Topic | Assignment                                   | Hosted Link |
 | ----- | ----- | -------------------------------------------- | ----------- |
 | 1     | GIT   | [COMMAND LINE](./0-Git/GIT-001-COMMANDLINE/) | NA          |
@@ -22,6 +35,7 @@ How to use this repository
 | S No. | Topic     | Assignment                               | FreeCodeCamp Id | Question Done Till Now |
 | ----- | --------- | ---------------------------------------- | --------------- | ---------------------- |
 | 1     | JS Basics | [JS BASIC Question List](./1-JS-BASICS/) |                 |                        |
+>>>>>>> 1820310c27e9d740abb18d46756f87c6049ce5bf
 
 # HTML
 

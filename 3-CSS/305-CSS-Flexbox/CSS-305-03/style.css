@@ -1,1 +1,94 @@
 /* start your styling here  */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.h1 {
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    font-family: Bahnschrift Condensed;
+}
+
+.p {
+    position: absolute;
+    top: 260px;
+    left: 50px;
+    color: white;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(242,242,242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    height: 600px;
+    width: 400px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgb(227,133,37);
+    padding: 25px;
+    position: relative;
+}
+
+.second {
+    height: 600px;
+    width: 400px;
+    background-color: rgb(1,104,113);
+    padding: 25px;
+    position: relative;
+}
+
+.third {
+    height: 600px;
+    width: 400px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(0,63,62);
+    padding: 25px;
+    position: relative;
+}
+
+.button {
+    height: 70px;
+    width: 170px;
+    border-radius: 35px;
+    border: none;
+    position: absolute;
+    top: 470px;
+    left: 50px;
+}
+
+.img-1 {
+    border-radius: 15px;
+    
+}
+
+.img-2 {
+   margin-top: 7px;
+    
+}
+
+.img-3 {
+    margin-top: 9px;
+}
+
+.h3-1 {
+    color:rgb(227,133,37); 
+}
+
+.h3-2 {
+    color:rgb(1,104,113) ;
+}
+
+.h3-3 {
+    color:rgb(0,63,62) ;
+}

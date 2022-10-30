@@ -1,1 +1,42 @@
 /* start your css here */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main {
+    height: 70px;
+    width: 70%;
+    background-color: rgb(3, 3, 39);
+    display: flex;
+  }
+
+  .div {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px
+  }
+
+  h3{
+    color: white;
+    color: grey;
+  }
+
+  .highlight {
+    color: white;
+  }
+
+  
