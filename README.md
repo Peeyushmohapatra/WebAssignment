@@ -11,7 +11,6 @@ How to use this repository
 
 # Git
 
-<<<<<<< HEAD
 | S No. | Topic | Assignment                                                | Hosted Link |
 | ----- | ----- | --------------------------------------------------------- | ----------- |
 | 1     | GIT   | [COMMAND LINE](./0-Git/GIT-001-COMMANDLINE/ )            | NA          |
