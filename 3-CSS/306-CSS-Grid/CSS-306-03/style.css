@@ -1,1 +1,76 @@
 /* start your styling here  */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 90vh;
+    width: 100vw;
+    background-color: rgb(255,253,248);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.last {
+    height: 10vh;
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+}
+
+.last-1 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(224,219,215);
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.one {
+    height: 18%;
+    width: 100%;
+    border-bottom: 5px solid rgb(61,83,104);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.second {
+    height: 82%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid rgb(11,1,0);
+}
+
+.div1 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    border-bottom: 5px solid rgb(11,1,0);
+}
+
+.div2 {
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+
+.left {
+    height: 100%;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    border-right: 5px solid rgb(11,1,0);
+}
+
+.right {
+    height: 100%;
+    width: 51%;
+    display: flex;
+}
