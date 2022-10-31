@@ -6,7 +6,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .main {
+        height: 90vh;
+        width: 100vw;
+        background-color: rgb(255,253,248);
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .last {
+        height: 10vh;
+        width: 100vw;
+        padding: 10px;
+        display: flex;
+    }
+    
+    .last-1 {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(224,219,215);
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        justify-content: space-between;
+    }
+
+    .one {
+        height: 18%;
+        width: 100%;
+        border-bottom: 5px solid rgb(61,83,104);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .second {
+        height: 82%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 5px solid rgb(11,1,0);
+    }
+
+    .div1 {
+        height: 60%;
+        width: 100%;
+        display: flex;
+        border-bottom: 5px solid rgb(11,1,0);
+    }
+
+    .div2 {
+        height: 40%;
+        width: 100%;
+        display: flex;
+    }
+
+    .left {
+        height: 100%;
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        border-right: 5px solid rgb(11,1,0);
+    }
+
+    .right {
+        height: 100%;
+        width: 51%;
+        display: flex;
+    }
+</style>
 <body>
-    <!-- start your code here -->
+    <div class="main">
+        <div class="one">
+
+            <div style="display: flex;height: 100%;justify-content: center;align-items: center;">
+                <img style="height: 50px;width: 20px;" src="./Shine.png">
+                <button style="height: 27px;width: 130px;background-color: rgb(45, 40, 34);border-radius: 6px;"><h4 style="color: rgb(255, 255, 255);">HOME</h4></button>
+            </div>
+          
+            <button style="width: 130px;background-color: rgb(45, 40, 34);border-radius: 6px;"><h4 style="color: rgb(255, 255, 255);">ABOUT</h4></button>
+            <img src="M.png">
+            <button style="width: 130px;background-color: rgb(45, 40, 34);border-radius: 6px;"><h4 style="color: rgb(255, 255, 255);">MENU</h4></button>
+            <button style="width: 130px;background-color: rgb(45, 40, 34);border-radius: 6px;"><h4 style="color: rgb(255, 255, 255);">CONTACT</h4></button>
+        </div>
+        <div class="second">
+            <div class="div1">
+                <div class="left">
+                    <div style="height: 44%;width: 100%;display: flex;border-bottom: 5px solid rgb(11,1,0)">
+                    <div style="height: 100%;width: 40%;border-right: 5px solid rgb(11,1,0);display: flex;padding: 5px;">
+                    <img style="height: 100%;width: 100%;" src="1.png">
+                    </div>
+                    <div style="height: 100%;width: 60%;display: flex;padding: 5px;">
+                    <img style="height: 100%;width: 100%;" src="2.png">
+                    </div>
+                    </div>
+                    <div style="height: 56%;width: 100%;display: flex;">
+                    <div style="height: 100%;width: 55%;border-right: 5px solid rgb(11,1,0);padding: 5px;">
+                    <img style="height: 100%;width: 100%;" src="./5.png">
+                    </div>
+                    <div style="height: 100%;width: 45%;padding: 5px;">
+                    <img style="height: 100%;width: 100%;" src="./6.png">
+                    </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="height: 100%;width: 40%;border-right: 5px solid rgb(11,1,0);display: flex;padding: 5px;">
+                    <img style="height: 100%;width: 100%;" src="3.png">
+                    </div>
+                    <div style="height: 100%;width: 60%;padding: 5px;">
+                    <img style="height: 100%;width: 100%;" src="4.png">
+                    </div>
+                </div>
+            </div>
+            <div class="div2">
+                <div style="height: 100%;width: 31%;border-right: 5px solid rgb(11,1,0);padding: 5px;">
+                <img style="height: 100%;width: 100%;" src="./7.png">
+                </div>
+                <div style="height: 100%;width: 40%;border-right: 5px solid rgb(11,1,0);padding: 5px;">
+                <img style="height: 100%;width: 100%;" src="./8.png">
+                </div>
+                <div style="height: 100%;width: 29%;padding: 5px;">
+                <img style="height: 100%;width: 100%;" src="9.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="last">
+        <div class="last-1">
+            <div style="display: flex;gap: 30px;justify-content: space-around;">
+                <h6 style="color: rgb(91,86,82);">HOME</h6>
+                <h6 style="color: rgb(91,86,82);">ABOUT</h6>
+                <h6 style="color: rgb(91,86,82);">MENU</h6>
+                <h6 style="color: rgb(91,86,82);">CONTACT</h6>
+                <h6 style="color: rgb(91,86,82);font-weight:900;">|</h6>
+                <h6 style="color: rgb(91,86,82);">©  MERCER  TAVERN  2013</h6>
+            </div>
+            <div>
+                <h6 style="color: rgb(91,86,82);">SITE BY VERSETT</h6>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

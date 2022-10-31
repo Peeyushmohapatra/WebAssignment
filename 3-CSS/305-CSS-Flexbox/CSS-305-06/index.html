@@ -5,8 +5,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
-<body>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .main {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .taskbar {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon {
+        flex: 0.4;
+        display: flex;
+        padding: 15px;
+    }
+
+    .container {
+        height: 100%;
+        width: 80%;
+        display: flex;
+    }
+
+    .rest {
+       flex: 0.6;
+       display: flex;
+    }
+
+    .one {
+        flex: 0.5;
+        display: flex;
+        gap: 7px;
+    }
+
+    .two {
+        flex: 0.5;
+        display: flex;
+        gap: 7px;
+    }
+
+    .first,.second,.third,.fourth {
+        flex:0.25;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .line {
+        flex: 0.05;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .join {
+        flex: 0.44;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signup {
+        flex: 0.44;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     
+</style>
+<body>
+    <div class="main">
+        <div class="taskbar">
+
+            <div class="container">
+                <div class="icon">
+                    <img src="https://www.edigitalagency.com.au/wp-content/uploads/Linkedin-logo-png.png">
+                </div>
+                <div class="rest">
+                    <div class="one">
+                        <div class="first">
+                            <img style="height: 50px;width: 50px;" src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-22/icon-discover-nor.png">
+                            <h3>Discover</h3>
+                        </div>
+                        <div class="second">
+                            <img style="height: 50px;width: 50px;" src="https://cdn-icons-png.flaticon.com/512/2118/2118701.png">
+                            <h3>People</h3>
+                        </div>
+                        <div class="third">
+                            <img style="height: 50px;width: 60px;" src="https://icons-for-free.com/iconfiles/png/512/learning+linkedin+video+icon-1320184668627581607.png">
+                            <h3>Learning</h3>
+                        </div>
+                        <div class="fourth">
+                            <img style="height: 50px;width: 50px;" src="https://icons-for-free.com/iconfiles/png/512/briefcase+business+job+portfolio+resume+suitcase+icon-1320190710960493893.png">
+                            <h3>Jobs</h3>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="line">
+                            <img style="height: 70px;width: 4px;background-color: gray;" src="Screenshot 2022-10-31 165553.png">
+                        </div>
+                        <div class="join">
+                            <h2 style="margin-top: 30px;">Join Now</h2>
+                        </div>
+                        <div class="signup">
+                            <button style="height: 70px;width: 140px;background-color: rgb(255, 255, 255);border: 1px solid rgb(103, 184, 242);border-radius: 37px;margin-top: 30px;"><h2 style="color: rgb(103, 184, 242);">Sign in</h2></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="content"></div>
+    </div>
 </body>
 </html>

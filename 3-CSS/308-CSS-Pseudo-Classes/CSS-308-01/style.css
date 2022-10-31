@@ -1,1 +1,120 @@
 /* start your styling here  */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-weight:500;
+    cursor: pointer;
+}
+
+h1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 500px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+}
+
+.blue {
+    background-color: white;
+    color: blue;
+    flex: 0.15;
+    height: 100%;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue:hover {
+    background-color: blue;
+    color: white;
+}
+
+.green {
+    background-color: white;
+    color: rgb(23, 189, 23);
+    flex: 0.21;
+    height: 100%;
+    border: 2px solid rgb(23, 189, 23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green:hover {
+    background-color: rgb(23, 189, 23);
+    color: white;
+}
+
+.red {
+    background-color: white;
+    color: red;
+    flex: 0.21;
+    height: 100%;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red:hover {
+    background-color: red;
+    color: white;
+}
+
+.orange {
+    background-color: white;
+    color: orange;
+    flex: 0.21;
+    height: 100%;
+    border: 2px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orange:hover {
+    background-color: orange;
+    color: white;
+}
+
+.grey {
+    background-color: white;
+    color: black;
+    flex: 0.21;
+    height: 100%;
+    border: 2px solid rgb(184, 178, 178);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grey:hover {
+    background-color: rgb(184, 178, 178);
+    color: black;
+}
+
+.one {
+    flex: 0.16;
+    display: flex;
+    padding: 5px;
+    gap:5px;
+}
+
+
