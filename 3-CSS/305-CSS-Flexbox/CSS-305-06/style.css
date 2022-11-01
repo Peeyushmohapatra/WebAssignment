@@ -1,1 +1,141 @@
 /* start your styling here  */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: Segoe UI;
+}
+
+h5 {
+    color: rgb(102,102,102);
+    font-family: Segoe UI;
+    font-weight: 400;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.taskbar {
+    height: 10%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    height: 90%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.container-1 {
+    height: 100%;
+    width: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.logo-container {
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+
+.button-container {
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.button {
+    height: 100%;
+    width: 60%;
+    display: flex;
+}
+
+.people {
+    flex: 0.25;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.login {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.join {
+    flex: 0.45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part-1 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+
+.part-1-1 {
+    height: 100%;
+    width: 29%;
+    display: flex;
+}
+
+.part-1-2 {
+    height: 100%;
+    width: 71%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 70px; ;
+}
+
+.final-div {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.part-2 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+
+.part-2-1 {
+    height: 100%;
+    width: 80%;
+}
+
+.part-2-2 {
+    height: 100%;
+    width: 20%;
+}
+
+.h1 {
+    font-family: "Calibri Light";
+    font-size: 56px;
+    font-weight: 200;
+    line-height: 67.2px;
+    color:rgb(143,88,73);
+}
