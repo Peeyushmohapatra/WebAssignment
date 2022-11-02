@@ -154,6 +154,19 @@ p {
     cursor: pointer;
 }
 
+.select option:hover{
+    background-color: #029bd5;
+}
+
+.select > option {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background: #313131;
+    color: #fff;
+}
+
 .i:hover {
     color:rgb(59, 89, 152);
     cursor: pointer;
@@ -182,3 +195,6 @@ p {
 .btn-2:hover {
     color: rgb(107, 106, 106);
 }
+
+
+
