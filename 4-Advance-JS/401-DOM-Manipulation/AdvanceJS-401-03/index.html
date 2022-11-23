@@ -4,9 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AdvanceJS-401-03</title>
   </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .imageBox {
+      height: 60%;
+      width: 60%;
+      position: relative;
+    }
+
+    .icon {
+      height: 9%;
+      width: 100%;
+      display:flex;
+      justify-content: space-between; 
+      padding: 0 10px;
+      position: absolute;
+      top: 45%;
+    }
+
+    .image {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+    }
+
+    .left {
+      font-size:50px;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+    }
+
+    .right {
+      font-size:50px;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+    }
+  </style>
   <body>
-    Start your code here
+    <div class="imageBox">
+      <img class="image" src="https://blog.geekster.in/wp-content/uploads/2021/09/Most-popular-full-stack-featured-image.png" alt="">
+
+      <div class="icon" >
+        <i class="fa-solid fa-caret-left left"></i>
+        <i class="fa-solid fa-caret-right right"></i>
+      </div>
+    </div>
   </body>
+
+  <script>
+    const left = document.getElementsByClassName('left')[0];
+    const right = document.getElementsByClassName('right')[0];
+    const image = document.getElementsByClassName('image')[0];
+
+    const arr = ['https://blog.geekster.in/wp-content/uploads/2021/09/Most-popular-full-stack-featured-image.png',
+                  'https://blog.geekster.in/wp-content/uploads/2022/06/React-projects-featured-image.png',
+                'https://blog.geekster.in/wp-content/uploads/2021/09/Top-10-Skills-to-Become-FullStack-Developer-image.png'];
+
+    let i = 0;
+// ------------------Left-Button--------------------------
+    left.addEventListener('click', ()=>{
+      if(i===0){
+        i=arr.length;
+      }
+      if(i>0){
+        i--
+        image.setAttribute('src',arr[i]);
+      } 
+    });
+// -------------------Right Button -----------------------
+    right.addEventListener('click', ()=> {
+      i++;
+
+      if(i===arr.length){
+        i = 0;
+      }
+      if(i>=0 && i<arr.length){
+        image.setAttribute('src',arr[i]);
+      }
+    });
+    </script>
 </html>
