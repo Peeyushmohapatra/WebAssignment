@@ -48,9 +48,9 @@
     const input = document.getElementsByClassName("inputBox")[0];
     const wrote = document.getElementsByClassName("wrote")[0];
 
-    input.addEventListener("keyup",()=> {
+    input.addEventListener("keypress",()=> {
       let text = input.value;
       wrote.innerText = text;
-    })
+    });
   </script>
 </html>
