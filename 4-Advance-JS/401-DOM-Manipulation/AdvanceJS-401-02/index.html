@@ -4,9 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AdvanceJS-401-02</title>
   </head>
+
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+    .child {
+      list-style: none;
+      background-color: blue;
+      border: 2px solid black;
+      border-radius: 4px;
+      color: white;
+      height: 30px;
+      width: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor:pointer;
+    }
+
+    .childs {
+      list-style: none;
+      border: 2px solid black;
+      border-radius: 4px;
+      color: white;
+      height: 30px;
+      width: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .parent {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+  </style>
   <body>
-    Start your code here
+    <ul class="parent">
+      <li class="child">1st Child</li>
+    </ul>
+    </div>
   </body>
+
+  <script>
+    const parent = document.getElementsByClassName('parent')[0];
+    const child = document.getElementsByClassName('child')[0];
+
+    let i = 2;
+    child.addEventListener('click', () => {
+
+      if(i<=17){
+      const childs = document.createElement('li');
+      childs.setAttribute('class','childs');
+      if(i === 2){
+        childs.innerText = `${i}nd Child`;
+        }else {
+          childs.innerText = `${i}th Child`;
+        }
+
+        if(i === 9){
+          childs.style.backgroundColor = "rgb(0,128,0)";
+        }else if(i === 17){
+          childs.style.backgroundColor = "rgb(219,112,147)";
+        }else {
+          childs.style.backgroundColor = "rgb(0,255,0)";
+        }
+
+        if(i%2!==0 && i!==9 && i!==17){
+          childs.style.backgroundColor = "white";
+          if(i === 3){
+            childs.innerText = `${i}rd Child`;
+            childs.style.color = "black";
+          }else{
+            childs.innerText = `${i}th Child`;
+            childs.style.color = "black";
+          }
+        }
+      parent.append(childs);
+      }
+      i++;
+    })
+  </script>
 </html>
