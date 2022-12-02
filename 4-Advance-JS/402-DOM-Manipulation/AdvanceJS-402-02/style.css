@@ -17,3 +17,16 @@
   h1 {
     color: rgb(0,128,0);
   }
+
+  #button {
+    height: 30px;
+    width: 120px;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  #button:hover {
+    background-color: darkgray;
+  }
