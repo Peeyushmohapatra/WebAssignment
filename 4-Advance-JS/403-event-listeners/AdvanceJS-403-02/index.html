@@ -4,9 +4,140 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AdvanceJS-403-02</title>
   </head>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-color: rgb(40,49,73);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+      gap: 150px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    .heading {
+      font-family: Arvo, cursive;
+      font-size: 100px;
+      font-weight: 700;
+      line-height: normal;
+      color: rgb(219, 237, 243);
+    }
+
+    .drums {
+      display: flex;
+      gap: 20px;
+      position: relative;
+    }
+
+    .drum {
+      height: 150px;
+      width: 150px;
+      background-color: white;
+      border: 7px solid rgb(64,75,105);
+      border-radius: 15px;
+      font-family: Arvo, cursive;
+      font-size: 100px;
+      font-weight: 700;
+      line-height: normal;
+      color: rgb(218,4,99);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .one{
+      background: url('./images\ \(1\).jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .two {
+      background: url('./images.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .three {
+      background: url('./Three.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .four {
+      background: url('./Four.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .five {
+      background: url('./five.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .six{
+      background: url('./six.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .seven {
+      background: url('./seven.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
   <body>
-    Start your code here
+    <div class="container">
+      <h1 class="heading">Drum🥁Kit</h1>
+    </div>
+    <div class="drums">
+      <div class="drum one" onclick="ab.play()">w</div>
+      <div class="drum two" onclick="twoo.play()">a</div>
+      <div class="drum three" onclick="threee.play()">s</div>
+      <div class="drum four" onclick="fivee.play()">d</div>
+      <div class="drum five" onclick="fourr.play()">j</div>
+      <div class="drum six" onclick="twoo.play()">k</div>
+      <div class="drum seven" onclick="threee.play()">l</div>
+    </div>
   </body>
+  <script>
+    const one   = document.getElementsByClassName("one")[0];
+    const two   = document.getElementsByClassName("two")[0];
+    const three = document.getElementsByClassName("three")[0];
+    const four  = document.getElementsByClassName("four")[0];
+    const five  = document.getElementsByClassName("five")[0];
+    const six   = document.getElementsByClassName("six")[0];
+    const seven = document.getElementsByClassName("seven")[0];
+    
+    var ab = new Audio();
+    ab.src = "One.mp3";
+
+    var twoo = new Audio();
+    twoo.src = "two.mp3";
+
+    var threee = new Audio();
+    threee.src = "threee.mp3";
+
+    var fourr = new Audio();
+    fourr.src = "four.mp3";
+
+    var fivee = new Audio();
+    fivee.src = "five.mp3";
+
+  </script>
 </html>

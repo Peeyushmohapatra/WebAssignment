@@ -6,7 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-color: rgb(40,49,73);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+      gap: 150px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    .heading {
+      font-family: Arvo, cursive;
+      font-size: 100px;
+      font-weight: 700;
+      line-height: normal;
+      color: rgb(219, 237, 243);
+    }
+
+    .drums {
+      display: flex;
+      gap: 20px;
+      position: relative;
+    }
+
+    .drum {
+      height: 150px;
+      width: 150px;
+      background-color: white;
+      border: 7px solid rgb(64,75,105);
+      border-radius: 15px;
+      font-family: Arvo, cursive;
+      font-size: 100px;
+      font-weight: 700;
+      line-height: normal;
+      color: rgb(218,4,99);
+    }
+
+  </style>
   <body>
-    Start your code here
+    <div class="container">
+      <h1 class="heading">Drum🥁Kit</h1>
+    </div>
+    <div class="drums">
+      <div class="drum one">w</div>
+      <div class="drum two">a</div>
+      <div class="drum three">s</div>
+      <div class="drum four">d</div>
+      <div class="drum five">j</div>
+      <div class="drum six">k</div>
+      <div class="drum seven">l</div>
+    </div>
   </body>
 </html>
