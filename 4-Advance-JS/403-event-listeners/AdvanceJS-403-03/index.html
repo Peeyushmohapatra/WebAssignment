@@ -5,69 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <style>
-    * {
-      margin: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      height: 100vh;
-      width: 100vw;
-      background-color: rgb(40,49,73);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 50px;
-      gap: 150px;
-    }
-
-    .container {
-      display: flex;
-      align-items: center;
-    }
-
-    .heading {
-      font-family: Arvo, cursive;
-      font-size: 100px;
-      font-weight: 700;
-      line-height: normal;
-      color: rgb(219, 237, 243);
-    }
-
-    .drums {
-      display: flex;
-      gap: 20px;
-      position: relative;
-    }
-
-    .drum {
-      height: 150px;
-      width: 150px;
-      background-color: white;
-      border: 7px solid rgb(64,75,105);
-      border-radius: 15px;
-      font-family: Arvo, cursive;
-      font-size: 100px;
-      font-weight: 700;
-      line-height: normal;
-      color: rgb(218,4,99);
-    }
-
-  </style>
+  <link rel="stylesheet" href="./style.css">
   <body>
-    <div class="container">
-      <h1 class="heading">Drum🥁Kit</h1>
+    <div id="container">
+      <h1>Charles' Tip Calculator</h1>
+
+      <div id="calculator">
+        <form>
+          <label>
+            How much was your bill?<br>
+            $ <input type="text" id="billAmount">
+          </label>
+          <label>
+            How was your service? <br>
+            <select id="serviceQuality">
+              <option disabled selected value="0">--Choose an option--</option>
+              <option value="0.3">30% - outstanding</option>
+              <option value="0.2">20% - Good</option>
+              <option value="0.15">15% - It was Okay</option>
+              <option value="0.1">10% - Bad</option>
+              <option value="0.05">5% - Terrible</option>
+            </select>
+          </label>
+          <label>
+            How many people are sharing the bill? <br>
+            <input type="text" id="totalPeople"> People
+          </label>
+          <button type="button" id="calculate">Calculate!</button>
+        </form>
+      </div>
+      <div id="totalTip">
+        <sup>$</sup><span id="tip">0.00</span>
+        <small id="each">each</small>
+      </div>
     </div>
-    <div class="drums">
-      <div class="drum one">w</div>
-      <div class="drum two">a</div>
-      <div class="drum three">s</div>
-      <div class="drum four">d</div>
-      <div class="drum five">j</div>
-      <div class="drum six">k</div>
-      <div class="drum seven">l</div>
-    </div>
+    <body>
+      <script src="script.js"></script>
+    </body>
+    <script src="./script.js"></script>
   </body>
 </html>
