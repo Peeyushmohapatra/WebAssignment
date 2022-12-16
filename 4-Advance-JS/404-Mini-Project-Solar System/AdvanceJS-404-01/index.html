@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="mainContainer">
+
+        <h1 class="heading">Calculate a weight of an object on a planet</h1>
+
+        <div class="inputsContainer">
+            <input placeholder="Mass in Kiligram" class="input" type="nunber">
+            <select name="name" id="select">
+                <option value="">--Select Planet--</option>
+                <option value="MERCURY">MERCURY</option>
+                <option value="EARTH">EARTH</option>
+                <option value="VENUS">VENUS</option>
+                <option value="MARS">MARS</option>
+                <option value="JUPITER">JUPITER</option>
+                <option value="URANUS">URANUS</option>
+                <option value="NEPTUNE">NEPTUNE</option>
+                <option value="PLUTO">PLUTO</option>
+                <option value="MOON">MOON</option>
+            </select>
+            <button class="button">Calculate Weight</button>
+        </div>
+
+        <div class="planetContainer">
+            <img class="planetImg" src="./EARTH.png" alt="">
+            <div class="weightInformation">
+                <h4 class="weight">The weight of the object on <b class="name">EARTH</b></h4>
+                <div class="circle">7.00 N</div>
+            </div>
+            <div class="massRequire">
+                <b class="b">Mass Is Require</b>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
 </html>

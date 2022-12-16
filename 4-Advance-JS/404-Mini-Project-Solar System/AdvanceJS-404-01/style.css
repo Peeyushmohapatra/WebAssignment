@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url('galaxy.gif');
+}
+
+.heading {
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.weight {
+    color: rgb(255, 255, 255);
+}
+
+.mainContainer {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.planetContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.212);
+    height: 65%;
+    width: 70%;
+    justify-content: space-around;
+    display: none;
+}
+
+.weightInformation {
+    height: 40%;
+    width: 40%;
+    background-color:rgba(128, 128, 128, 0.177);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.planetImg {
+    height: 69%;
+    width: 32%;
+}
+
+.inputsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.input {
+    height: 40px;
+    width: 230px;
+    padding: 0 10px;
+}
+
+.button {
+    height: 40px;
+    width: 130px;
+    font-size:x-small;
+    color: white;
+    background-color: rgb(107,107,108);
+    border-radius: 8px;
+}
+
+#select {
+    text-align: center;
+    height: 40px;
+    width: 170px;
+    border-radius: 8px;
+    color: gray;
+}
+
+.circle {
+    height: 60%;
+    width: 27%;
+    background-color: rgba(128, 128, 128, 0.386);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+    color: white;
+} 
+
+.massRequire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17%;
+    width: 25%;
+    background-color: gray;
+    display: none;
+}
+
+.b  {
+    color: white;
+}
