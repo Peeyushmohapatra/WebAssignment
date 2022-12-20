@@ -4,9 +4,106 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AdvanceJS-410-05</title>
   </head>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-image: linear-gradient(to right,rgb(255,170,158),rgb(255,217,192));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #container {
+      height: 40%;
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 15px;
+      gap: 15px;
+      border-radius: 8px;
+      box-shadow: 0 5px 2px 4px rgb(236,57,51);
+      background-image: linear-gradient(to right,rgb(255,204,194),rgb(255,215,202));
+    }
+
+    #last {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    } 
+
+    #quote {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      color: black;
+    }
+
+    #author {
+      font-style: italic;
+      font-weight: bold;
+      font-size: larger;
+    }
+
+    #button {
+      height: 100%;
+      border: 1px solid black;
+      background-image: linear-gradient(to right,rgb(255,170,158),rgb(255,217,192));
+      border-radius: 7px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .content {
+      width: 100%;
+      display: flex;
+    }
+  </style>
   <body>
-    Start your code here
+    <div id="container">
+        <q id="quote">Don't let your selfdown.One day will come your dream comes true</q>
+      
+      <p id="author">asdasdad</p>
+      <hr style="width: 100%;border: 2px solid black;background-color: black;">
+      
+      <div id="last">
+        <img style="height:40px;width: 40px;" src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c53e.png" alt="">
+        <button id="button">Next quote</button>
+      </div>
+    </div>
   </body>
+  <script>
+    const quote  = document.getElementById("quote");
+    const authorr = document.getElementById("author");
+    const button = document.getElementById("button");
+
+    button.addEventListener("click",getData);
+
+    let i=-1;
+    async function getData(){
+      const streamData = await fetch(`https://type.fit/api/quotes`)
+      const textData = await streamData.text();
+      const jsonData = JSON.parse(textData);
+      i++;
+      const thought = jsonData[i].text;
+      const writer = jsonData[i].author;
+      authorr.innerText = `~ ${writer}`;
+      quote.innerText = `${thought}`
+
+      if(i=== jsonData.length){
+        i = 0;
+      }
+
+    }
+  </script>
 </html>
