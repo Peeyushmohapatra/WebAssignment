@@ -4,9 +4,193 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AdvanceJS-408-01</title>
   </head>
+  <style>
+    *{
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #fName, #lName, #country, #score {
+      height: 40px;
+      border: 1px solid rgb(229,201,197);
+      padding: 0 5px;
+    } 
+
+    #button {
+      height: 40px;
+      background-color: rgb(229,201,197);
+      border: none;
+      color: white;
+      width: 120px;
+    }
+
+    .about {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .container {
+      width: 100%;
+      height: 80px;
+      background-color: rgb(229,201,197);
+      display: flex;
+    }
+
+    .one , .two, .three, .four {
+      flex: 2.5;
+    }
+
+    .one {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .two, .three, .four {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .four{
+      justify-content: space-around;
+      padding: 5px 0;
+    }
+
+    #circle, #increment, #decrement {
+      height: 100%;
+      width: 30%;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  </style>
   <body>
-    Start your code here
+    <h1>30 Days Of JavaScript Challenge Leaderboard</h1>
+    <div class="details">
+      <input id="fName" placeholder="First Name" type="text">
+      <input id="lName" placeholder="Last Name" type="text">
+      <input id="country" placeholder="Country Name" type="text">
+      <input id="score" placeholder="Score" type="number">
+      <button id="button">Add Player</button>
+    </div>
+
+    <p id="alert"></p>
+
+    <div class="about">
+      
+    </div>
   </body>
+
+  <script>
+    const fName   = document.getElementById("fName");
+    const lName   = document.getElementById("lName");
+    const country = document.getElementById("country");
+    const score   = document.getElementById("score");
+    const button  = document.getElementById("button");
+    const removeChilds = document.getElementById("circle");
+    const addFive = document.getElementById("increment");
+    const desFive = document.getElementById("decrement");
+
+    const err = document.getElementById("alert");
+
+    const parent = document.getElementsByClassName("about")[0];
+
+
+    button.addEventListener("click",() => {
+
+      if(fName.value === "" || lName.value === "" || country.value === "" || score.value === ""){
+        err.innerText = "All fields are required";
+        err.style.color = "red";
+        return;
+      }
+
+      const child = document.createElement("div");
+      child.setAttribute("class","container");
+
+      const div = document.createElement("div");
+      div.setAttribute("class","one");
+      // -----------------
+      const h3 = document.createElement("h3");
+      h3.setAttribute("class","name");
+      h3.innerText = fName.value+" "+lName.value;
+      const p = document.createElement("p");
+      p.innerText = new Date();
+      p.style.fontSize = "10px"
+      p.style.fontWeight = "bolder";
+      div.style.gap = "5px"
+      div.append(h3);
+      div.append(p);
+
+      const two = document.createElement("div");
+      two.setAttribute("class","two");
+      two.innerText = country.value;
+
+      const three = document.createElement("div");
+      three.setAttribute("class","three");
+      three.innerText = score.value;
+
+      const four = document.createElement("div");
+      four.setAttribute("class","four");
+
+      const circle = document.createElement("button");
+      circle.setAttribute("id","circle");
+      circle.innerText = "🗑️";
+
+      const increment = document.createElement("button");
+      increment.setAttribute("id","increment");
+      increment.innerText = "+5";
+
+      const decrement = document.createElement("button");
+      decrement.setAttribute("id","decrement");
+      decrement.innerText = "-5";
+      four.append(circle,increment,decrement);
+
+      four.append(circle)
+      four.append(increment)
+      four.append(decrement)
+      child.append(div,two,three,four);
+      
+      parent.append(child);
+
+      circle.addEventListener("click",() => {
+        parent.removeChild(child)
+      })
+
+      increment.addEventListener("click", () => {
+        let num = three.innerText;
+        num = Number(num);
+        three.innerText = num+5;
+      })
+
+      decrement.addEventListener("click", () => {
+        let num = three.innerText;
+        num = Number(num);
+        three.innerText = num-5;
+      })
+    
+    })
+    
+
+
+   
+  </script>
 </html>
+    
+
