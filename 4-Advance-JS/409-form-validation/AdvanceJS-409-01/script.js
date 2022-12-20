@@ -23,14 +23,14 @@ function verify(){
     verifyPassword(password.value);
     verifyNumber(num.value)
     verifyBio(bio.value);
-    button.style.backgroundColor = "rgb(33,191,115)";
-    button.style.border = "none";
 }
 
 
 function verifyFname(name){
-    if(name.length<3 || name.length>16){
+    if(name.length<3 || name.length>16 || name === ""){
         p1.style.color = "red";
+        fname.style.border = `${3}px solid red`;
+        return;
     }
 
     let i=0
@@ -52,8 +52,10 @@ function verifyFname(name){
 }
 
 function verifyLname(name){
-    if(name.length<3 || name.length>16){
-        p1.style.color = "red";
+    if(name.length<3 || name.length>16 || name === ""){
+        p2.style.color = "red";
+        lname.style.border = `${3}px solid red`;
+        return;
     }
 
     let i=0
@@ -69,7 +71,7 @@ function verifyLname(name){
         }
     }
     if(i===name.length){
-        fname.style.border = `${3}px solid rgb(33,191,115)`
+        lname.style.border = `${3}px solid rgb(33,191,115)`
         p2.style.color = "rgb(33,191,115)";
     }
 }
@@ -99,7 +101,12 @@ function verifyEmail (mail) {
             break
         }
     }
-    if((count===0 || count > 1) && (count1===0 || count1 > 1)){
+    if(count===0 || count > 1){
+            p3.style.color = "red";
+            email.style.border = `${3}px solid red`;
+            return;
+    }
+    if(count1===0 || count1 > 1){
             p3.style.color = "red";
             email.style.border = `${3}px solid red`;
             return;
@@ -153,6 +160,8 @@ function verifyBio(val){
     }else{
         p6.style.color = "rgb(33,191,115)";
         bio.style.border = `${3}px solid rgb(33,191,115)`;
+        button.style.backgroundColor = "rgb(33,191,115)";
+        button.style.border = "none";
     }
 }
 
