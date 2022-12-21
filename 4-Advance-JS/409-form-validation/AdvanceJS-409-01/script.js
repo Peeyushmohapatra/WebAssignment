@@ -1,10 +1,10 @@
-const fname = document.getElementById("first");
-const lname = document.getElementById("last");
-const email = document.getElementById("id");
+const fname    = document.getElementById("first");
+const lname    = document.getElementById("last");
+const email    = document.getElementById("id");
 const password = document.getElementById("key");
-const num = document.getElementById("contact");
-const bio = document.getElementById("data");
-const button = document.getElementById("button");
+const num      = document.getElementById("contact");
+const bio      = document.getElementById("data");
+const button   = document.getElementById("button");
 
 
 const p1 = document.getElementById("p1");
@@ -148,8 +148,6 @@ function verifyNumber(number){
     }
 
 }
-
-
 
 
 function verifyBio(val){
